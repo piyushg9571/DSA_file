@@ -1,0 +1,14 @@
+Q-10)  Draw a linked list and vector representation of the following sparse matrix.
+A-10) 	Linked List Representation:
+We can use a linked list to represent non-zero elements along with their positions (row and column). 
+Each node in the linked list contains the value, row index, column index, and a pointer to the next node.
+Linked List:
+Head -> (1, 2, 12) -> (2, 2, 11) -> (3, 1, 9)
+Here, the values are associated with their positions in the matrix.
+Vector Representation:
+We can use a vector to store a tuple of (row, column, value) for each non-zero element in the matrix.
+Vector:
+[(1, 2, 12), (2, 2, 11), (3, 1, 9)]
+This vector represents the non-zero elements along with their positions in the matrix.
+Keep in mind that these representations are suitable for sparse matrices where the majority of the elements are zero,
+and we focus on storing only the non-zero elements to save memory.
