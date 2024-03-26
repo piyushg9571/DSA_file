@@ -1,0 +1,18 @@
+Q-8) Write a short note on any two:
+A – Sparse matrix and its representation.
+B – Static vs Dynamic memory allocation.
+C – Arrays of pointers  
+A-8)  B) Static Memory Allocation:
+•	In static memory allocation, memory is allocated at compile time.
+•	Memory size and layout are determined before the program execution.
+•	Variables declared using static allocation have fixed memory addresses and sizes throughout the program'sexecution.
+•	Examples of statically allocated memory include global variables, local variables declared with the static keyword, and arrays with a fixed size.
+
+ Dynamic Memory Allocation:
+•	Dynamic memory allocation allows memory to be allocated during runtime.
+•	Memory size and layout can be determined and adjusted dynamically based on program needs.
+•	Dynamic memory allocation is typically managed using functions like malloc, calloc, realloc, and free in C and C++.
+•	It allows for flexible memory management, enabling the creation of data structures like linked lists, trees, and dynamic arrays.
+•	One drawback of dynamic memory allocation is the potential for memory leaks and fragmentation if memory is not properly managed and deallocated.
+C) Array of pointers: 
+An array of pointers is a data structure that holds a collection of memory addresses, each pointing to a specific location in memory. Instead of storing data directly, an array of pointers stores addresses of other variables or data structures. This provides flexibility in managing and accessing data, especially when dealing with complex data structures or variable-sized data.
