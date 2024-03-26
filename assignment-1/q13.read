@@ -1,0 +1,18 @@
+Q-13) Determine the formula to find the address location of an element in three-dimensional arrays, 
+suppose each element takes four bytes of space and elements are stored in row-major order.
+A-13) To determine the address location of an element in a three-dimensional array stored in row-major order,
+where each element takes four bytes of space, you can use the following formula:
+address = base_address + (i * (num_columns * num_rows) + j * num_columns + k) * size_of_element
+where: 
+•	base_address is the memory address of the first element of the array.
+•	i, j, and k are the indices of the element in the three dimensions (row, column, depth).
+•	num_columns represents the number of columns in each row.
+•	num_rows represents the number of rows.
+•	size_of_element is the size of each element in bytes.
+Explanation:
+•	i * (num_columns * num_rows) calculates the offset due to the rows. Each row consists of num_columns * num_rows elements.
+•	j * num_columns calculates the offset due to the columns within a row. Each column consists of num_columns elements.
+•	k represents the offset within a single column.
+•	The entire expression calculates the total offset in terms of the number of elements.
+•	Multiplying by size_of_element converts the offset from the number of elements to bytes, since each element takes up size_of_element bytes.
+This formula accounts for the row-major order, where elements are stored sequentially by rows, followed by columns, and then depths.
