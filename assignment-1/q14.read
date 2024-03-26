@@ -1,0 +1,22 @@
+Q-14) Write and explain the algorithm to find the 7th smallest element in an array.
+A-14)  Input:
+  - An array arr of n elements (where n >= 7).
+Output:
+  - The 7th smallest element in the array.
+
+Steps:
+1. If the length of the array (n) is less than 7, print an error message and exit.
+2. Call a helper function QuickSelect(arr, 0, n-1, 6), where 6 represents the index of the 7th smallest element.
+3. In the QuickSelect function:
+   a. If the left index (low) is greater than or equal to the right index (high), return arr[high] as the k-th smallest element.
+   b. Choose a pivot index, pivot, using a partitioning scheme (e.g., Lomuto or Hoare).
+   c. Recursively apply QuickSelect to the partition that contains the k-th smallest element:
+      - If k is less than pivot, call QuickSelect(arr, low, pivot - 1, k).
+      - If k is greater than pivot, call QuickSelect(arr, pivot + 1, high, k).
+      - If k is equal to pivot, return arr[pivot].
+4. Print or return the result obtained from the QuickSelect function.
+Explanation:
+•	The algorithm ensures that the array has at least 7 elements before attempting to find the 7th smallest element.
+•	The QuickSelect algorithm is used, which is similar to the quicksort algorithm but focuses on a specific index (k) to find the k-th smallest element efficiently.
+•	The partitioning scheme helps in dividing the array into two parts such that the elements on the left side are smaller than the pivot, and the elements on the right side are greater than the pivot.
+•	The recursion continues on the partition that contains the k-th smallest element until the element is found.
