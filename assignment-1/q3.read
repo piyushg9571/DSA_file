@@ -1,0 +1,8 @@
+Q-3) How two-dimensional arrays are represented in memory? 
+Also obtain the formula for calculating the address of any element stored in the array, in case of column-major.
+A-3) Two-dimensional arrays are typically represented in memory in a row-major or column-major order. In this explanation,
+     I'll focus on column-major order, which is commonly used in languages like Fortran.
+     In column-major order, elements of the array are stored column by column in memory. This means that consecutive elements of the same column 
+     are stored next to each other, and columns are stored one after the other.
+     o calculate the memory address of any element in a two-dimensional array stored in column-major order, you can use
+     Address=BaseAddress+(ColumnIndex×ColumnStride)+RowIndex
