@@ -1,0 +1,4 @@
+Q- Explain the term arrays as a linear data structure.
+A- 	An array is a fundamental linear data structure used in computer science and programming. 
+It represents a collection of elements stored in contiguous memory locations, where each element can be accessed using an index or position within the array. 
+The term "linear" in the context of data structures refers to the sequential arrangement of elements in a single dimension.
