@@ -1,0 +1,7 @@
+Q-9)  Explain the memory representation of two- dimensional arrays with the help of examples.
+A-9) Representation of a two-dimensional array in memory is row-major and column-major.
+-->  A 2D array has a type such as an int[][] or String[][], with two pairs of square brackets. 
+     The elements of a 2D array are arranged in rows and columns, and the new operator for 2D arrays specifies both the number of rows and the number of columns.
+--> A two-dimensional matrix a, two-dimensional address space must be mapped to a one-dimensional address space. 
+    In the computer's memory matrices are stored in either Row-major order or Column-major order form.
+--> Row-major order and column-major order are methods for storing multidimensional arrays in linear storage such as random access memory.
