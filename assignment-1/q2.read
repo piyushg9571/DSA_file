@@ -1,0 +1,7 @@
+Q-2) What are the sparse matrices? Give an example.
+A-2) 
+--> Sparse matrices are matrices in which most of the elements are zero. 
+    In contrast to dense matrices, which store all elements regardless of value, sparse matrices only store the non-zero elements, along with their indices.
+
+--> Sparse matrices are often used in situations where the matrix is large and mostly empty, to save memory and computational resources. 
+     They are commonly encountered in scientific computing, graph theory, and various other fields.
